@@ -3,6 +3,9 @@ const cors = require('cors');
 const app = express();
 const { swaggerUi, swaggerSpec } = require('./swagger');
 
+app.get('/', (req, res) => {
+     res.json({ status: 'ok', message: 'Recruitment Assessment API is running' });
+   });
 const aptitudeRoute = require("./routes/aptitude.route");
 const encryptedRoute = require("./routes/encrypted.route");
 const memoryRoute = require("./routes/memory.route");
