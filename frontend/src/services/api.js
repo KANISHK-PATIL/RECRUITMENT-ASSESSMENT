@@ -1,9 +1,8 @@
 import axios from "axios";
 
-// This is your backend URL
 const API = axios.create({
 
-    baseURL: "http://localhost:3000/api"
+    baseURL: "https://recruitment-assessment-main-ksuxu7fu1-kanishk17.vercel.app/"
 
 });
 
